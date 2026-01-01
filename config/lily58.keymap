@@ -16,9 +16,12 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_press &kp LGUI &kp LSHFT &kp LCTRL &kp LALT>,
+                <&macro_press>,
+                <&kp LGUI &kp LSHFT &kp LCTRL &kp LALT>,
                 <&macro_pause_for_release>,
-                <&macro_release &kp LGUI &kp LSHFT &kp LCTRL &kp LALT>;
+                <&macro_release>,
+                <&kp LGUI &kp LSHFT &kp LCTRL &kp LALT>;
+
             label = "HYPER";
         };
     };
@@ -84,8 +87,8 @@
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                         &bt BT_DISC 0     &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4  &bootloader
 &trans      &trans        &trans        &trans        &out OUT_TOG  &ext_power EP_TOG                    &kp C_MUTE        &kp C_VOL_DN   &kp C_VOL_UP   &trans         &kp LC(LG(Q))  &trans
 &trans      &trans        &trans        &trans        &trans        &trans                               &kp C_PLAY_PAUSE  &kp C_PREV     &kp C_NEXT     &trans         &trans         &trans
-&trans      &trans        &trans        &trans        &trans        &trans             &trans    &trans  &trans            &kp C_BRI_DEC  &kp C_BRI_UP   &trans         &trans         &trans
-                                        &trans        &trans        &trans             &trans    &trans  &trans            &trans         &tog 3
+&trans      &trans        &trans        &trans        &trans        &trans             &trans    &trans  &trans            &kp C_BRI_DEC  &kp C_BRI_UP   &trans         &trans         &tog 3
+                                        &trans        &trans        &trans             &trans    &trans  &trans            &trans         &trans
             >;
 
             label = "RAISE";
@@ -100,11 +103,11 @@
             //                      |  MO4  |  ALT  | SPACE |        |  |       |      |       | TOGGLE|
 
             bindings = <
-&kp ESC    &kp N1  &kp N2  &kp N3  &kp N4    &kp N5                       &none  &none  &none  &none  &none  &none
-&kp TAB    &kp Q   &kp W   &kp E   &kp R     &kp T                        &none  &none  &none  &none  &none  &none
-&kp LCTRL  &kp A   &kp S   &kp D   &kp F     &kp G                        &none  &none  &none  &none  &none  &none
-&kp LSHFT  &kp Z   &kp X   &kp C   &kp V     &kp B      &none     &none   &none  &none  &none  &none  &none  &none
-                           &mo 4   &kp LALT  &kp SPACE  &none     &none   &none  &none  &tog 3
+&kp ESC    &kp N1  &kp N2  &kp N3  &kp N4    &kp N5                        &none  &none  &none  &none  &none  &none
+&kp TAB    &kp Q   &kp W   &kp E   &kp R     &kp NUMBER_6                  &none  &none  &none  &none  &none  &none
+&kp LCTRL  &kp A   &kp S   &kp D   &kp F     &kp N7                        &none  &none  &none  &none  &none  &none
+&kp LSHFT  &kp Z   &kp X   &kp C   &kp N9    &kp N8        &none    &none  &none  &none  &none  &none  &none  &tog 3
+                           &mo 4   &kp LALT  &kp SPACE     &none    &none  &none  &none  &none
             >;
 
             label = "GAMING";
@@ -119,11 +122,11 @@
             //                      |  ###  |       |       |        |  |       |      |       | TOGGLE|
 
             bindings = <
-&tog 3   &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                       &none  &none  &none  &none  &none  &none
-&kp F6   &kp F7  &kp F8  &kp F9  &kp F10 &kp F11                      &none  &none  &none  &none  &none  &none
-&kp F12  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0                       &none  &none  &none  &none  &none  &none
-&trans   &trans  &trans  &trans  &trans  &trans     &none     &none   &none  &none  &none  &none  &none  &none
-                         &trans  &trans  &trans     &none     &none   &none  &none  &tog 3
+&kp F12  &kp F1  &kp F2  &kp F3  &kp F4   &kp F5                   &none  &none  &none  &none  &none  &none
+&kp F6   &kp F7  &kp F8  &kp F9  &kp F10  &kp F11                  &none  &none  &none  &none  &none  &none
+&trans   &trans  &trans  &trans  &trans   &trans                   &none  &none  &none  &none  &none  &none
+&trans   &trans  &trans  &trans  &trans   &trans   &none    &none  &none  &none  &none  &none  &none  &tog 3
+                         &trans  &trans   &trans   &none    &none  &none  &none  &none
             >;
 
             label = "GAMING_FN";
