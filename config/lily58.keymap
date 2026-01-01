@@ -54,6 +54,8 @@
 &kp EQUAL          &kp Z   &kp X             &kp C               &kp V           &kp B           &none    &none  &kp N            &kp M            &kp COMMA    &kp DOT            &kp FSLH  &kp BACKSLASH
                                              &hyper              &kp ESC         &lt 1 SPACE     &none    &none  &lt 2 ENTER      &kp BSPC         &hyper
             >;
+
+            label = "BASE";
         };
 
         lower_layer {
@@ -129,7 +131,7 @@
                          &trans  &trans   &trans   &none    &none  &none  &none  &none
             >;
 
-            label = "GAMING_FN";
+            label = "G_FN";
         };
     };
 };
