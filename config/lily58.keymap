@@ -67,11 +67,11 @@
             //                      |       |       |       |        |  |       |      |  DEL  |       |
 
             bindings = <
-&trans  &kp F1  &kp F2     &kp F3                &kp F4         &kp F5                     &kp F6          &kp F7        &kp F8          &kp F9     &kp F10  &kp F11
-&trans  &trans  &trans     &kp LS(LA(NUMBER_2))  &trans         &trans                     &kp HOME        &kp PG_DN     &kp PG_UP       &trans     &trans   &trans
-&trans  &trans  &kp LA(N)  &kp LA(I)             &kp LA(GRAVE)  &kp LA(E)                  &kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT  &trans   &trans
-&trans  &trans  &trans     &kp LA(C)             &trans         &trans     &none    &none  &trans          &trans        &trans          &trans     &trans   &trans
-                           &trans                &trans         &trans     &none    &none  &trans          &kp DEL       &trans
+&trans  &kp F1  &kp F2     &kp F3                &kp F4         &kp F5                     &kp F6          &kp F7          &kp F8        &kp F9     &kp F10  &kp F11
+&trans  &trans  &trans     &kp LS(LA(NUMBER_2))  &trans         &trans                     &kp HOME        &kp PG_DN       &kp PG_UP     &trans     &trans   &trans
+&trans  &trans  &kp LA(N)  &kp LA(I)             &kp LA(GRAVE)  &kp LA(E)                  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &trans   &trans
+&trans  &trans  &trans     &kp LA(C)             &trans         &trans     &none    &none  &trans          &trans          &trans        &trans     &trans   &trans
+                           &trans                &trans         &trans     &none    &none  &trans          &kp DEL         &trans
             >;
 
             label = "LOWER";
